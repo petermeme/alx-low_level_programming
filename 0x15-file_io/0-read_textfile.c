@@ -1,6 +1,6 @@
 #include "main.h"
 /*
- * main - a function that reads a text file and prints it to the POSIX standard output
+ * main -function that reads text file and prints to the POSIX standard output
  *
  * return: 0
  */
@@ -8,7 +8,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *letter;
-	ssize_t file, b ,c;
+	ssize_t file, b, c;
 
 	if (filename == NULL)
 	{
@@ -18,7 +18,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	letter = malloc(letters);
 	if (letter == NULL)
 	{
-		return(0);
+		return (0);
 	}
 
 	file = open(filename, O_RDONLY);
