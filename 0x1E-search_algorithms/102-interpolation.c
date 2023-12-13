@@ -2,9 +2,9 @@
 
 /**
  * interpolation_search - performs jump search
- * @arr:integer array
+ * @arr: integer array
  * @s: size
- * @value: value
+ * @v: value
  *
  * Return: the index found or -1
  */
@@ -34,3 +34,4 @@ int interpolation_search(int *arr, size_t s, int v)
 	}
 	return (-1);
 }
+

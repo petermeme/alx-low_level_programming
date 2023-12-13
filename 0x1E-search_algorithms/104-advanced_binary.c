@@ -32,9 +32,9 @@ int *_advanced_binary(int *arr, size_t s, int v)
 
 /**
  * advanced_binary - performs advanced binary search
- * @array: the integer array
- * @size: its size
- * @value: value to search for
+ * @arr: the integer array
+ * @s: its size
+ * @v: value to search for
  *
  * Return: the index found or -1
  */
