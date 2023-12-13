@@ -2,22 +2,22 @@
 
 /**
  * linear_search - performs linear search
- * @array: the integer array
- * @size: its size
- * @value: value to search for
+ * @arr: the integer array
+ * @s: its size
+ * @v: value to search for
  *
  * Return: the index found or -1
  */
-int linear_search(int *array, size_t size, int value)
+int linear_search(int *arr, size_t s, int v)
 {
 	size_t i = 0;
 
-	if (!array)
+	if (!arr)
 		return (-1);
-	while (i < size)
+	while (i < s)
 	{
-		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-		if (array[i] == value)
+		printf("Value checked array[%lu] = [%d]\n", i, arr[i]);
+		if (arr[i] == v)
 			return (i);
 		i++;
 	}

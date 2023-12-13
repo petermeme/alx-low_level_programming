@@ -2,34 +2,34 @@
 
 /**
  * binary_search - performs binary search
- * @array: the integer array
- * @size: its size
- * @value: value to search for
+ * @arr: integer array
+ * @s: size
+ * @v: value
  *
  * Return: the index found or -1
  */
-int binary_search(int *array, size_t size, int value)
+int binary_search(int *arr, size_t s, int v)
 {
 	size_t i = 0;
-	int *a = array;
+	int *a = arr;
 
-	if (!array)
+	if (!arr)
 		return (-1);
 
 	while (size)
 	{
-		for (i = 0, printf("Searching in array: "); i < size; i++)
-			printf("%d%s", a[i], i + 1 == size ? "\n" : ", ");
+		for (i = 0, printf("Searching in array: "); i < s; i++)
+			printf("%d%s", a[i], i + 1 == s ? "\n" : ", ");
 
-		i = (size - 1) / 2;
-		if (a[i] == value)
-			return ((a - array) + i);
-		else if (a[i] > value)
-			size = i;
+		i = (s - 1) / 2;
+		if (a[i] == v)
+			return ((a - arr) + i);
+		else if (a[i] > v)
+			s = i;
 		else
 		{
 			a += (i + 1);
-			size -= (i + 1);
+			s -= (i + 1);
 		}
 	}
 	return (-1);
